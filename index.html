@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girija</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(28, 27, 27);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(16, 15, 15);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: antiquewhite;
+            font-size: 18px;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 80px 0; */
+        }
+
+        .firstSection>div {
+            width: 37%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+
+        .leftSection .buttons {
+            padding: 20px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #3d41a9;
+            color: white;
+            /* border: 1px solid white;  */
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(139, 76, 199);
+        }
+
+        #element {
+            color: lightcoral;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 60vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 92px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image1 {
+            width: 30px;
+            position: relative;
+            top: -20px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 50px;
+           
+        }
+
+        .footer .footer-first{
+            display: flex;
+            padding: 23px 100px;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 20px;
+            background-color: rgb(28, 27, 27);
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: white
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: white
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 20px;
+            background-color: rgb(28, 27, 27);
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            color: #464242;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #d35400;
+        }
+        /* Footer */
+        footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #d35400;
+        }
+
+
+
+
+        /* Skills, Education, and Hobbies Sections */
+    section {
+        padding: 80px 20px;
+        background-color: rgb(28, 27, 27);
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        color: white;
+    }
+
+    section p, section ul {
+        font-size: 1.2rem;
+        color: white;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    .skills-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+
+    .education-details ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .education-details img {
+    width: 30px;
+    margin-left: 20px;
+}
+    .education-details ul li {
+        text-align: left;
+        color: lightgray;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Girija's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#service">Service</a></li> -->
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Girija</span>
+                <span>I am a</span>
+                <span id="element"></span>
+
+                <button class="btn">
+                    <a href="https://drive.google.com/file/d/1OAAwg7zdrbNYlM9conCXs63eeqFTKmXN/view?usp=drivesdk"
+                        class="btn" target="_blank">Download Resume</a>
+                </button>
+                <button class="btn">
+                    <a href="https://github.com/Girija212" class="btn" target="_blank">Visit GitHub</a>
+                </button>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I am currently pursuing a Bachelor of Computer Applications (BCA) degree, where I am learning the
+                fundamentals of programming, software development, and web technologies. With a passion for technology
+                and innovation, I am focused on building skills in web development, database management, and application
+                development. I enjoy solving complex problems and am always eager to learn new technologies to enhance
+                my expertise. My goal is to become a proficient full-stack developer, capable of delivering efficient
+                and scalable software solutions.</p>
+        </section>
+
+        <hr>
+        <section class="secondSection" id="projects">
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="em.png" alt="" class="image1">
+                    <div class="vertical-title">
+                        Employee Management Project
+                    </div>
+                    <div class="vertical-desc">
+                        Backend program with sping boot only CRUD test
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="banking.png" alt="" class="image1">
+                    <div class="vertical-title">
+                        Hotel Management Project
+                    </div>
+                    <div class="vertical-desc">
+                        Backend program with sping boot only CRUD test
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="netflix.jpg" alt="" class="image1">
+                    <div class="vertical-title">
+                        Netflix clone
+                    </div>
+                    <div class="vertical-desc">
+                        This is a front end project which is under construction
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Skills Section -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <h3>Programming Languages</h3>
+            <p>Java, C++, Python basic, JavaScript</p>
+        </div>
+        <div class="skill">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill">
+            <h3>Frameworks & Libraries</h3>
+            <p>Spring Boot</p>
+        </div>
+        <div class="skill">
+            <h3>Database Management</h3>
+            <p>MySQL</p>
+        </div>
+    </div>
+</section>
+<!-- Education Section -->
+<section class="education" id="education">
+    <h2>Education</h2>
+    <div class="education-details">
+        <img src="edu.avif" alt="">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p>MITS School of Biotechnology, 2022 - 2025</p>
+        <ul>
+            <li>Specialization in Computer Application</li>
+            <li>Relevant coursework: Data Structures, Web Development, Database Management, Backend and Frontend Development</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Hobbies Section -->
+<section class="hobbies" id="hobbies">
+    <h2>Hobbies</h2>
+    <p>Beyond coding, I enjoy photography, reading technology blogs, and storybooks. I also love participating in hackathons and contributing to open-source projects.</p>
+</section>
+     <!-- Contact Section -->
+     <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or have any questions, feel free to contact me.</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Girija's Portfolio</p>
+       <a href="mailto:girijashankarpattanayak@gmail.com">Email Me</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Photo Editor', 'Student'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
